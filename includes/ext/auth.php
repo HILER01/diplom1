@@ -6,7 +6,7 @@
 
     $pass = md5($pass . 'qweeqwweqweqweewq1123');
 
-    $mysqli = new mysqli('db3.myarena.ru', 'u2661_diplomkireev', 'diplomkireev', 'u2661_diplomkireev');
+    $mysqli = new mysqli('host', 'user', 'pass', 'db');
     // include ('includes/ext/db.php');
 
     $result = $mysqli->query("SELECT * FROM `main` WHERE `login` = '$login' AND `pass` = '$pass'");
